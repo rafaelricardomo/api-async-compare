@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: async-compare-deployment
+spec:
+  selector:
+    matchLabels:
+      app: async-compare
+  template:
+    metadata:
+      labels:
+        app: async-compare
+    spec:
+      containers:
+      - name: async-compare
+        image: rafaelricardomo/async-compare:{{tag}}        
+        ports:
+        - containerPort: 80
