@@ -1,9 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-async-compare-api
-  labels:
-      name: ingress-async-compare-api
+  name: ingress-async-compare-api  
 spec:
   rules:
   - host: api.async-compare.com.br
