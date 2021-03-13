@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     dockerapp = docker.build("rafaelricardomo/async-compare:v${env.BUILD_ID}",
-                    '-f ./AsyncCompare/AsyncCompare/Dockerfile ./AsynCompare')
+                    '-f ./AsyncCompare/AsyncCompare/Dockerfile ./AsyncCompare')
                 }
                 
             }
