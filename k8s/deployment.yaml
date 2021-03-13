@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: async-compare-deployment
+  name: async-compare-api-deployment
 spec:
   selector:
     matchLabels:
