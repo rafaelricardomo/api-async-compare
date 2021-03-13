@@ -9,7 +9,10 @@ spec:
   - host: api.async-compare.com.br
     http:
       paths:
-      -  backend:
+      - pathType: Prefix
+        path: "/"
+        backend:
           service:
-            serviceName: async-compare-api-service
-            servicePort: 80
+            name: async-compare-api-service
+            port:
+              number: 80
