@@ -5,14 +5,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: async-compare
+      app: async-compare-api
   template:
     metadata:
       labels:
-        app: async-compare
+        app: async-compare-api
     spec:
       containers:
-      - name: async-compare
-        image: rafaelricardomo/async-compare:{{tag}}        
+      - name: async-compare-api
+        image: rafaelricardomo/async-compare-api:{{tag}}        
         ports:
         - containerPort: 80

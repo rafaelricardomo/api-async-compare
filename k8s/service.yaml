@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: async-compare-service
+  name: async-compare-api-service
 spec:
   selector:
-    app: async-compare
+    app: async-compare-api
   ports:
   - name: http
     protocol: TCP
     port: 80
     targetPort: 80  
-  type: NodePort
+  type: ClusterIP
