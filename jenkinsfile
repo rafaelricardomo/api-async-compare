@@ -10,7 +10,7 @@ pipeline {
         stage('Build image') {
             steps {
                 script {
-                    dockerapp = docker.build("rafaelricardomo/async-compare:v${env.BUILD_ID}",
+                    dockerapp = docker.build("rafaelricardomo/async-compare:${env.BUILD_ID}",
                     '-f ./AsyncCompare/AsyncCompare/Dockerfile ./AsyncCompare/AsyncCompare')
                 }
                 
