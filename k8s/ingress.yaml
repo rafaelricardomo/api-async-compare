@@ -6,11 +6,7 @@ spec:
   rules:
   - host: api.async-compare.com.br
     http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: async-compare-api-service
-            port:
-              number: 80
+      paths:      
+        - backend:            
+            serviceName: async-compare-api-service
+            servicePort: 80
